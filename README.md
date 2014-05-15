@@ -1,16 +1,24 @@
 ## teabowl ![npm](https://badge.fury.io/js/teabowl.png)
 
-just another teabowl
+just call everyone who star your project to have a cup of tea. Take it easy, teabowl reminds you there are still some people are interest with your tiny project. when you just made a update on a very very late night, No one will know, that's the reason I wrote teabowl.
 
 ### Installation
 ````
-$ [sudo] npm install teabowl
+$ npm install teabowl
 ````
-
 
 ### Example
 ````javascript
 var teabowl = require('teabowl');
+
+// teabowl search giving GitHub username/GitHub Repo ID
+teabowl('turingou/douban.fm', function(err, starers) {
+  if (err) return;
+  // starers is a object contains
+  // the status of your projects
+  // and every starter's public email (if shown)
+  console.log(starers);
+});
 ````
 
 ### API

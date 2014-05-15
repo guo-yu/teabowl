@@ -1,6 +1,6 @@
 {
   "name": "teabowl",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "just another teabowl",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/turingou/teabowl/issues"
   },
-  "homepage": "https://github.com/turingou/teabowl"
+  "homepage": "https://github.com/turingou/teabowl",
+  "dependencies": {
+    "request": "~2.34.0",
+    "cheerio": "~0.16.0"
+  }
 }
